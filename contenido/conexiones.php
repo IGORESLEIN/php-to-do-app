@@ -1,15 +1,14 @@
 <?php
 
-$user = "markel95";
+$user = "igoreslein";
 
 $pass = "";
 
 try {
-    $dbh = new PDO('mysql:host=localhost;dbname=c9',$user,$pass);
-
-    
-}catch (PDOException $e){
-    print "Error!: " .$e -> getMessage() . "<br/>";
+    $dbh = new PDO('mysql:host=localhost;dbname=appTodo', $user, $pass);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
 
