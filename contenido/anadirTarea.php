@@ -1,7 +1,7 @@
 <?php
 //http://php.net/manual/en/pdostatement.fetchall.php
 //Hay que empezar
-require_once("conexion.php");
+require_once("conexiones.php");
 try{
     
     //Hacemos un filtro para que cuando nos den el ID saber que es un Int.

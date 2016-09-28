@@ -12,7 +12,6 @@ try {
     header('Content-Type: application/json');
     echo json_encode($result);
     
-    $dbh = null;
     
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
